@@ -1,0 +1,39 @@
+<!-- Exercise: Try out code in Page 41 
+Enhance it as follows: The form reads a second number, and 
+calculate the sum -->
+<!DOCTYPE html>
+<html>
+<style>
+    button {
+        border-radius: 10px;
+    }
+
+    input {
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+    <h1>Calculate Two Number</h1>
+    <p>Insert Number on each input</p>
+    First Number: <br><input type="number" id="firstnum" /><br><br>
+    Second Number: <br><input type="number" id="secondnum" /><br><br>
+    <button type="button" onclick="myFunction()">Submit</button>
+
+    <p id="eduform"></p>
+    <script>
+        function myFunction() {
+            var x, y, sum;
+            //Getting the value of the input field with id="edu"
+            x = parseInt(document.getElementById("firstnum").value);
+            y = parseInt(document.getElementById("secondnum").value);
+            // calculate first and second number
+            sum = x + y;
+
+            console.log("output should be " + sum)
+            document.getElementById("eduform").innerHTML = "Sum of first and second number: " + sum;
+        }
+    </script>
+</body>
+
+</html>
