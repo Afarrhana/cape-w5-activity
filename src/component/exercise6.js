@@ -23,10 +23,6 @@ class PageMultimedia extends Component {
                     src="https://www.youtube.com/embed/tgbNymZ7vqY">
                 </iframe>
 
-                <h3>Component 3: Youtube</h3>
-                <h3>Component 4: Youtube</h3>
-                <h3>Component 5: Youtube</h3>
-
             </section>
         );
     }
