@@ -1,0 +1,75 @@
+<!-- Day 1 Challenge: Page 85-85 -->
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>
+        How to change the background color
+        after clicking the button ?
+    </title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body style="text-align:center;">
+
+    <h1 style="color:green;">
+        Change Color
+    </h1>
+
+    <p id="GFG_UP" style="font-size: 16px; font-weight: bold;">
+    </p>
+
+    Color:
+    <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+    Width: <input type="number" id="width" name="width"><br><br>
+    Height: <input type="number" id="height" name="height"><br><br>
+    <button onclick="draw()">
+        Click here
+    </button>
+    <p></p>
+
+    <canvas id="myCanvas">
+        Your browser does not support the canvas tag.
+    </canvas>
+
+    <p id="GFG_DOWN" style="color:green; font-size: 20px; font-weight: bold;">
+    </p>
+
+    <script>
+        var el_up = document.getElementById("GFG_UP");
+        var el_down = document.getElementById("GFG_DOWN");
+        var str = "Click on button to change the background color";
+
+        el_up.innerHTML = str;
+
+        function changeColor(color) {
+            document.getElementById('myCanvas').style.background = color;
+        }
+
+        function gfg_Run() {
+            changeColor(document.getElementById('favcolor').value);
+        }
+        function draw() {
+            const form = document.getElementById("myCanvas");
+
+            if (form.getContext) {
+                var c = document.getElementById("myCanvas");
+                var color = document.getElementById("favcolor");
+
+                var width = parseInt(document.getElementById("width").value);
+                var height = parseInt(document.getElementById("height").value);
+
+                var ctx = c.getContext("2d");
+                ctx.fillStyle = document.getElementById("favcolor").value;
+                ctx.fillRect(20, 20, width, height);
+            }
+        }
+    </script>
+</body>
+
+</html>
