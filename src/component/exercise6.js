@@ -8,7 +8,6 @@ class PageMultimedia extends Component {
     render() {
         return (
             <section>
-                <h1>Exercise 6 Multimedia</h1>
                 <b>What is Multimedia?</b>
                 <p>
                     Multimedia comes in many different formats. It can be almost anything you can
