@@ -4,8 +4,6 @@ import { render } from 'react-dom';
 
 import { useNavigate } from 'react-router-dom';
 import Navigation from '../navigation';
-import image1 from '../../img/E1_before.png'
-import image2 from '../../img/E1_after.png'
 
 export const Exe5 = () => {
     let navigate = useNavigate();

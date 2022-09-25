@@ -13,8 +13,10 @@ const Navigation = () => {
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                        <a href="#">Challenge 1</a>
-=                    </div>
+                        <a>Challenge 1</a>
+                        <a>Challenge 2</a>
+                        <a>Challenge 3</a>
+                    </div>
                 </div>
                 <div class="dropdown">
                     <button class="dropbtn">Exercises
